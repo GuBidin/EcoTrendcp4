@@ -1,124 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcoTrend — Vida sustentável, escolhas conscientes</title>
-<meta name="description" content="E-commerce especializado em moda, beleza, casa e tecnologia sustentáveis.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrend — Vida sustentável, escolhas conscientes</title>
+  <meta name="description" content="E-commerce especializado em moda, beleza, casa e tecnologia sustentáveis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css"> 
 </head>
-
 <body>
-
-
-<header class="site-header">
-  <nav class="navbar navbar-expand-lg py-3 container">
-    <a class="navbar-brand brand" href="index.html">Eco<span class="dot">•</span>Trend</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-label="Abrir menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMain">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link nav-link-custom active" href="index.html">Início</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="categoria.html">Roupas</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="categoria.html">Beleza</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="categoria.html">Casa</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="categoria.html">Tecnologia</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="contato.html">Contato</a></li>
-      </ul>
-      <div class="d-flex align-items-center gap-2">
-        <a href="#" class="icon-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#" class="icon-btn" aria-label="Conta"><i class="fa-regular fa-user"></i></a>
-        <a href="#" class="icon-btn" aria-label="Carrinho">
-          <i class="fa-solid fa-basket-shopping"></i>
-          <span class="cart-count">3</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-
-
-<section class="hero">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
-        class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1600&q=80"
-          class="d-block w-100 hero-carousel-img" alt="Plantas em um jardim sustentável">
-        <div class="carousel-caption hero-caption">
-          <span class="eyebrow">Loja consciente desde a raiz</span>
-          <h1>Menos impacto. Mais propósito na sua rotina.</h1>
-          <p>Produtos selecionados por origem, material e impacto real.</p>
-          <a href="categoria.html" class="btn btn-forest">Explorar produtos</a>
+  <header class="cabecalho-site">
+    <nav class="navbar navbar-expand-lg py-3 container">
+      <a class="navbar-brand marca" href="index.html">Eco<span class="ponto">•</span>Trend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link link-navegacao active" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Roupas</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Beleza</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Casa</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="contato.html">Contato</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="botao-icone" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="botao-icone" aria-label="Conta"><i class="fa-regular fa-user"></i></a>
+          <a href="#" class="botao-icone" aria-label="Carrinho"><i class="fa-solid fa-basket-shopping"></i><span class="contador-carrinho">3</span></a>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=80"
-          class="d-block w-100 hero-carousel-img" alt="Pessoa usando roupas sustentáveis">
-        <div class="carousel-caption hero-caption">
-          <span class="eyebrow">Moda responsável</span>
-          <h1>Escolhas que respeitam você e o planeta.</h1>
-          <p>Fibras orgânicas, recicladas e produção mais justa.</p>
-          <a href="categoria.html" class="btn btn-forest">Ver roupas</a>
+  <main id="conteudo-principal">
+    <section class="destaque">
+      <div id="carrosselDestaque" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-
-      <div class="carousel-item">
-       <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1600&q=80"
-        class="d-block w-100 hero-carousel-img" alt="Produtos naturais para cuidados pessoais">
-        <div class="carousel-caption hero-caption">
-          <span class="eyebrow">Beleza sem desperdício</span>
-          <h1>Cuidados naturais para todos os dias.</h1>
-          <p>Produtos com menos plástico e mais transparência.</p>
-          <a href="categoria.html" class="btn btn-forest">Conhecer beleza</a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 imagem-carrossel" alt="Plantas em um jardim sustentável">
+            <div class="carousel-caption legenda-carrossel"><span class="rotulo">Loja consciente desde a raiz</span><h1>Menos impacto. Mais propósito na sua rotina.</h1><p>Produtos selecionados por origem, material e impacto real.</p><a href="categoria.html" class="btn btn-floresta">Explorar produtos</a></div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 imagem-carrossel" alt="Pessoa usando roupas sustentáveis">
+            <div class="carousel-caption legenda-carrossel"><span class="rotulo">Moda responsável</span><h1>Escolhas que respeitam você e o planeta.</h1><p>Fibras orgânicas, recicladas e produção mais justa.</p><a href="categoria.html" class="btn btn-floresta">Ver roupas</a></div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 imagem-carrossel" alt="Produtos naturais para cuidados pessoais">
+            <div class="carousel-caption legenda-carrossel"><span class="rotulo">Beleza sem desperdício</span><h1>Cuidados naturais para todos os dias.</h1><p>Produtos com menos plástico e mais transparência.</p><a href="categoria.html" class="btn btn-floresta">Conhecer beleza</a></div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
       </div>
-    </div>
+      <div class="faixa-impacto"><div class="container"><div class="row g-0 text-center text-md-start">
+        <div class="col-6 col-md-3 estatistica"><span class="numero">18,4t</span><span class="legenda">CO₂ compensado</span></div>
+        <div class="col-6 col-md-3 estatistica"><span class="numero">312k</span><span class="legenda">Itens plásticos evitados</span></div>
+        <div class="col-6 col-md-3 estatistica"><span class="numero">96%</span><span class="legenda">Embalagem reciclável</span></div>
+        <div class="col-6 col-md-3 estatistica"><span class="numero">140+</span><span class="legenda">Marcas parceiras</span></div>
+      </div></div></div>
+    </section>
 
-    <button class="carousel-control-prev" type="button"
-      data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-
-    <button class="carousel-control-next" type="button"
-      data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
-  </div>
-
-  <div class="impact-ticker">
-    <div class="container">
-      <div class="row g-0 text-center text-md-start">
-        <div class="col-6 col-md-3 stat"><span class="num">18,4t</span><span class="label">CO₂ compensado</span></div>
-        <div class="col-6 col-md-3 stat"><span class="num">312k</span><span class="label">Itens plásticos evitados</span></div>
-        <div class="col-6 col-md-3 stat"><span class="num">96%</span><span class="label">Embalagem reciclável</span></div>
-        <div class="col-6 col-md-3 stat"><span class="num">140+</span><span class="label">Marcas parceiras</span></div>
+    <section id="categorias" class="py-5 bg-white"><div class="container">
+      <div class="cabecalho-secao"><div><span class="rotulo">Navegue por categoria</span><h2 class="mt-2">O que você procura</h2></div></div>
+      <div class="grade-categorias">
+        <a href="categoria.html" class="cartao-categoria"><div class="icone-categoria"><i class="fa-solid fa-shirt"></i></div><h4>Roupas &amp; acessórios</h4><p>Fibras orgânicas e recicladas</p></a>
+        <a href="categoria.html" class="cartao-categoria"><div class="icone-categoria"><i class="fa-solid fa-leaf"></i></div><h4>Beleza natural</h4><p>Cuidados pessoais sem plástico</p></a>
+        <a href="categoria.html" class="cartao-categoria"><div class="icone-categoria"><i class="fa-solid fa-house"></i></div><h4>Casa sustentável</h4><p>Itens duráveis para o dia a dia</p></a>
+        <a href="categoria.html" class="cartao-categoria"><div class="icone-categoria"><i class="fa-solid fa-microchip"></i></div><h4>Tecnologia verde</h4><p>Eletrônicos de baixo impacto</p></a>
       </div>
-    </div>
-  </div>
-</section>
+    </div></section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="py-5"><div class="container">
+      <div class="cabecalho-secao"><div><span class="rotulo">Selecionados pela equipe</span><h2 class="mt-2">Produtos em destaque</h2></div><a href="categoria.html" class="btn btn-contorno-floresta d-none d-md-inline-flex">Ver todos</a></div>
+      <div class="grade-produtos">
+        <article class="cartao-produto"><div class="miniatura"><span class="selo-ecologico">Algodão orgânico</span><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=60" alt="Camiseta básica de algodão orgânico"></div><div class="corpo-produto"><span class="rotulo-categoria">Roupas</span><h5>Camiseta Básica Orgânica</h5><div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span class="preco">R$ 89,90</span><button class="btn btn-floresta adicionar-carrinho"><i class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button></div></article>
+        <article class="cartao-produto"><div class="miniatura"><span class="selo-ecologico">Zero plástico</span><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=60" alt="Shampoo sólido natural"></div><div class="corpo-produto"><span class="rotulo-categoria">Beleza</span><h5>Shampoo Sólido Natural</h5><div class="avaliacao-folhas" aria-label="5 de 5 folhas de sustentabilidade"><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><span class="legenda-avaliacao">5/5</span></div><span class="preco">R$ 34,90</span><button class="btn btn-floresta adicionar-carrinho"><i class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button></div></article>
+        <article class="cartao-produto"><div class="miniatura"><span class="selo-ecologico">Bambu certificado</span><img src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=500&q=60" alt="Kit de utensílios de bambu para cozinha"></div><div class="corpo-produto"><span class="rotulo-categoria">Casa</span><h5>Kit Utensílios de Bambu</h5><div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span class="preco">R$ 129,00</span><button class="btn btn-floresta adicionar-carrinho"><i class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button></div></article>
+        <article class="cartao-produto"><div class="miniatura"><span class="selo-ecologico">Energia solar</span><img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=500&q=60" alt="Carregador solar portátil"></div><div class="corpo-produto"><span class="rotulo-categoria">Tecnologia</span><h5>Carregador Solar Portátil</h5><div class="avaliacao-folhas" aria-label="3 de 5 folhas de sustentabilidade"><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">3/5</span></div><span class="preco">R$ 219,90</span><button class="btn btn-floresta adicionar-carrinho"><i class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button></div></article>
+      </div>
+      <div class="text-center mt-4 d-md-none"><a href="categoria.html" class="btn btn-contorno-floresta">Ver todos os produtos</a></div>
+    </div></section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <footer class="rodape-site pt-5">
+    <div class="container pb-4"><div class="row g-4">
+      <div class="col-lg-4"><a class="marca d-inline-block mb-3" style="color:var(--areia)" href="index-limpo.html">Eco<span class="ponto">•</span>Trend</a><p>Produtos sustentáveis com origem verificada, para escolhas mais conscientes.</p><a class="icone-social" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a class="icone-social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></div>
+      <div class="col-6 col-lg-2"><h2>Loja</h2><ul><li><a href="categoria.html">Roupas</a></li><li><a href="categoria.html">Beleza</a></li><li><a href="categoria.html">Casa</a></li><li><a href="categoria.html">Tecnologia</a></li></ul></div>
+      <div class="col-6 col-lg-2"><h2>Atendimento</h2><ul><li><a href="contato.html">Contato</a></li><li><a href="#">Trocas</a></li><li><a href="#">Privacidade</a></li></ul></div>
+      <div class="col-lg-4"><h2>FIAP Paulista</h2><p class="small">Av. Paulista, 1106 — Bela Vista, São Paulo - SP</p><iframe class="mapa-fiap" title="Mapa da FIAP Paulista" src="https://www.google.com/maps?q=FIAP+Paulista,+Avenida+Paulista+1106,+Sao+Paulo&output=embed" loading="lazy"></iframe></div>
+    </div></div>
+    <div class="rodape-inferior py-3"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 EcoTrend</span><span>Feito com propósito no Brasil.</span></div></div>
+  </footer>
+
 </body>
 </html>
-
-
