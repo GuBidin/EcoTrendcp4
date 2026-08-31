@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — EcoTrend</title>
+  <meta name="description" content="Todos os produtos sustentáveis da EcoTrend: moda, beleza, casa e tecnologia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="cabecalho-site">
+    <nav class="navbar navbar-expand-lg py-3 container">
+      <a class="navbar-brand marca" href="../index.html">Eco<span class="ponto">•</span>Trend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link link-navegacao" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao active" href="categoria.html">Roupas</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Beleza</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Casa</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="contato.html">Contato</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="botao-icone" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="botao-icone" aria-label="Conta"><i class="fa-regular fa-user"></i></a>
+          <a href="#" class="botao-icone" aria-label="Carrinho"><i class="fa-solid fa-basket-shopping"></i><span
+              class="contador-carrinho">3</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="py-5">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div><span class="rotulo">Catálogo completo</span>
+            <h2 class="mt-2">Todos os produtos</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          
+          <aside class="col-lg-3">
+            <form>
+              <div class="mb-4">
+                <h6 class="mb-3">Preço</h6>
+                <input type="range" class="form-range" min="0" max="250" step="10" value="250" id="filtroPreco">
+                <div class="d-flex justify-content-between small text-muted">
+                  <span>R$ 0</span>
+                  <span>R$ 250+</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="mb-3">Tipo de produto</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tipoRoupas" checked>
+                  <label class="form-check-label" for="tipoRoupas">Roupas &amp; acessórios</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tipoBeleza" checked>
+                  <label class="form-check-label" for="tipoBeleza">Beleza natural</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tipoCasa" checked>
+                  <label class="form-check-label" for="tipoCasa">Casa sustentável</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tipoTecnologia" checked>
+                  <label class="form-check-label" for="tipoTecnologia">Tecnologia verde</label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="mb-3">Marca</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="marcaTerra" checked>
+                  <label class="form-check-label" for="marcaTerra">Terra Viva</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="marcaVerdeVale" checked>
+                  <label class="form-check-label" for="marcaVerdeVale">Verde Vale</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="marcaRaiz" checked>
+                  <label class="form-check-label" for="marcaRaiz">Raiz &amp; Origem</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="marcaBioLux" checked>
+                  <label class="form-check-label" for="marcaBioLux">BioLux</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-floresta w-100">Aplicar filtros</button>
+            </form>
+          </aside>
+
+          
+          <div class="col-lg-9">
+            <div class="grade-produtos">
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Algodão orgânico</span><img
+                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=60"
+                    alt="Camiseta básica de algodão orgânico"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Roupas</span>
+                  <h5>Camiseta Básica Orgânica</h5>
+                  <div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span
+                    class="preco">R$ 89,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Zero plástico</span><img
+                    src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=60"
+                    alt="Shampoo sólido natural"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Beleza</span>
+                  <h5>Shampoo Sólido Natural</h5>
+                  <div class="avaliacao-folhas" aria-label="5 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><span class="legenda-avaliacao">5/5</span></div><span
+                    class="preco">R$ 34,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Bambu certificado</span><img
+                    src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=500&q=60"
+                    alt="Kit de utensílios de bambu para cozinha"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Casa</span>
+                  <h5>Kit Utensílios de Bambu</h5>
+                  <div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span
+                    class="preco">R$ 129,00</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Energia solar</span><img
+                    src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=500&q=60"
+                    alt="Carregador solar portátil"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Tecnologia</span>
+                  <h5>Carregador Solar Portátil</h5>
+                  <div class="avaliacao-folhas" aria-label="3 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">3/5</span></div><span
+                    class="preco">R$ 219,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Fibra reciclada</span><img
+                    src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=500&q=60"
+                    alt="Calça de fibra reciclada"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Roupas</span>
+                  <h5>Calça Reciclada Slim</h5>
+                  <div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span
+                    class="preco">R$ 179,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Vegano</span><img
+                    src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?auto=format&fit=crop&w=500&q=60"
+                    alt="Creme facial vegano"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Beleza</span>
+                  <h5>Creme Facial Vegano</h5>
+                  <div class="avaliacao-folhas" aria-label="5 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><span class="legenda-avaliacao">5/5</span></div><span
+                    class="preco">R$ 54,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Algodão cru</span><img
+                    src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=500&q=60"
+                    alt="Jogo de toalhas de algodão cru"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Casa</span>
+                  <h5>Jogo de Toalhas Cru</h5>
+                  <div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span
+                    class="preco">R$ 149,00</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Baixo consumo</span><img
+                    src="https://images.unsplash.com/photo-1573148195900-7845dcb9b127?auto=format&fit=crop&w=500&q=60"
+                    alt="Luminária LED de baixo consumo"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Tecnologia</span>
+                  <h5>Luminária LED Eficiente</h5>
+                  <div class="avaliacao-folhas" aria-label="4 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">4/5</span></div><span
+                    class="preco">R$ 99,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+
+              <article class="cartao-produto">
+                <div class="miniatura"><span class="selo-ecologico">Lã reciclada</span><img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=60"
+                    alt="Cachecol de lã reciclada"></div>
+                <div class="corpo-produto"><span class="rotulo-categoria">Roupas</span>
+                  <h5>Cachecol de Lã Reciclada</h5>
+                  <div class="avaliacao-folhas" aria-label="3 de 5 folhas de sustentabilidade"><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf preenchida"></i><i
+                      class="fa-solid fa-leaf preenchida"></i><i class="fa-solid fa-leaf"></i><i
+                      class="fa-solid fa-leaf"></i><span class="legenda-avaliacao">3/5</span></div><span
+                    class="preco">R$ 119,90</span><button class="btn btn-floresta adicionar-carrinho"><i
+                      class="fa-solid fa-basket-shopping me-2"></i>Adicionar</button>
+                </div>
+              </article>
+            </div>
+
+            <nav aria-label="Paginação de produtos" class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
+                    aria-disabled="true">Anterior</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <footer class="rodape-site pt-5">
+    <div class="container pb-4">
+      <div class="row g-4">
+        <div class="col-lg-4"><a class="marca d-inline-block mb-3" style="color:var(--areia)"
+            href="../index.html">Eco<span class="ponto">•</span>Trend</a>
+          <p>Produtos sustentáveis com origem verificada, para escolhas mais conscientes.</p><a class="icone-social"
+            href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a class="icone-social" href="#"
+            aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2>Loja</h2>
+          <ul>
+            <li><a href="categoria.html">Roupas</a></li>
+            <li><a href="categoria.html">Beleza</a></li>
+            <li><a href="categoria.html">Casa</a></li>
+            <li><a href="categoria.html">Tecnologia</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2>Atendimento</h2>
+          <ul>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trocas</a></li>
+            <li><a href="#">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>FIAP Paulista</h2>
+          <p class="small">Av. Paulista, 1106 — Bela Vista, São Paulo - SP</p><iframe class="mapa-fiap"
+            title="Mapa da FIAP Paulista"
+            src="https://www.google.com/maps?q=FIAP+Paulista,+Avenida+Paulista+1106,+Sao+Paulo&output=embed"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="rodape-inferior py-3">
+      <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 EcoTrend</span><span>Feito com
+          propósito no Brasil.</span></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
