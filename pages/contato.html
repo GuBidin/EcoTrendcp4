@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — EcoTrend</title>
+  <meta name="description" content="Fale com a equipe EcoTrend: dúvidas, trocas e parcerias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="cabecalho-site">
+    <nav class="navbar navbar-expand-lg py-3 container">
+      <a class="navbar-brand marca" href="../index.html">Eco<span class="ponto">•</span>Trend</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link link-navegacao" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Roupas</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Beleza</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Casa</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao" href="categoria.html">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link link-navegacao active" href="contato.html">Contato</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="botao-icone" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="botao-icone" aria-label="Conta"><i class="fa-regular fa-user"></i></a>
+          <a href="#" class="botao-icone" aria-label="Carrinho"><i class="fa-solid fa-basket-shopping"></i><span
+              class="contador-carrinho">3</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="py-5">
+      <div class="container">
+        <div class="cabecalho-secao justify-content-center text-center">
+          <div><span class="rotulo justify-content-center">Fale com a gente</span>
+            <h2 class="mt-2">Contato</h2>
+          </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-6">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="campoNome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="campoNome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="campoEmail" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="campoEmail" placeholder="voce@email.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="campoAssunto" class="form-label">Assunto</label>
+                  <select class="form-select" id="campoAssunto" required>
+                    <option selected disabled value="">Selecione um assunto</option>
+                    <option value="duvida">Dúvida sobre produto</option>
+                    <option value="pedido">Acompanhamento de pedido</option>
+                    <option value="troca">Trocas e devoluções</option>
+                    <option value="parceria">Parcerias</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="campoMensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="campoMensagem" rows="5"
+                    placeholder="Como podemos ajudar?" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-floresta">Enviar mensagem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="mb-3">Outros canais</h6>
+            <p class="text-muted mb-4">Prefere falar direto? Estamos disponíveis de segunda a sexta, das 9h às 18h.</p>
+            <ul class="list-unstyled d-flex flex-column gap-3">
+              <li class="d-flex align-items-center gap-3"><i class="fa-solid fa-envelope"
+                  style="color:var(--floresta)"></i><span>contato@ecotrend.com.br</span></li>
+              <li class="d-flex align-items-center gap-3"><i class="fa-solid fa-phone"
+                  style="color:var(--floresta)"></i><span>(11) 4002-8922</span></li>
+              <li class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"
+                  style="color:var(--floresta)"></i><span>Av. Paulista, 1106 — Bela Vista, São Paulo - SP</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <footer class="rodape-site pt-5">
+    <div class="container pb-4">
+      <div class="row g-4">
+        <div class="col-lg-4"><a class="marca d-inline-block mb-3" style="color:var(--areia)"
+            href="../index.html">Eco<span class="ponto">•</span>Trend</a>
+          <p>Produtos sustentáveis com origem verificada, para escolhas mais conscientes.</p><a class="icone-social"
+            href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a class="icone-social" href="#"
+            aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2>Loja</h2>
+          <ul>
+            <li><a href="categoria.html">Roupas</a></li>
+            <li><a href="categoria.html">Beleza</a></li>
+            <li><a href="categoria.html">Casa</a></li>
+            <li><a href="categoria.html">Tecnologia</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2>Atendimento</h2>
+          <ul>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trocas</a></li>
+            <li><a href="#">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>FIAP Paulista</h2>
+          <p class="small">Av. Paulista, 1106 — Bela Vista, São Paulo - SP</p><iframe class="mapa-fiap"
+            title="Mapa da FIAP Paulista"
+            src="https://www.google.com/maps?q=FIAP+Paulista,+Avenida+Paulista+1106,+Sao+Paulo&output=embed"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="rodape-inferior py-3">
+      <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 EcoTrend</span><span>Feito com
+          propósito no Brasil.</span></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
